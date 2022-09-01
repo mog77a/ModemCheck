@@ -43,8 +43,11 @@ def ISO_time(epochtime):
          import datetime or deal with the vagaries of datetime objects
          when they're otherwise unneeded.
     """
+    local_offset = -7 # MST
+    local_offset *= 3600
+    
+    return strftime('%Y-%m-%dT%H:%M:%S%z', gmtime(epochtime + local_offset))
 
-    return strftime('%Y-%m-%dT%H:%M:%SZ', gmtime(epochtime))
 
 
 def display_stats(datafile_name, outfile_name=None):
@@ -76,7 +79,7 @@ def display_stats(datafile_name, outfile_name=None):
             for freq in sorted(list(data_points.keys())):
                 if data_points[freq][index]:
                     X.append(ISO_time(int(event_time)))
-                    Y.append(int(freq.rstrip(' Hz')))
+                    Y.append(float(freq.rstrip(' MHz')))
                     S.append(math.sqrt(data_points[freq][index]))
                     T.append(
                         f'{data_points[freq][index]} {err_type} Errors')
@@ -99,7 +102,7 @@ def display_stats(datafile_name, outfile_name=None):
                                   x=1
                                   ),
                       xaxis=dict(type='date', title='Date/Time (in UTC)'),
-                      yaxis_title='Frequency (in Hz)',
+                      yaxis_title='Frequency (in MHz)',
                       title="CM1150V Packet Errors")
     if outfile_name is None:
         fig.show()

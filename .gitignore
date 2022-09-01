@@ -1,0 +1,5 @@
+.env/
+CM1200v2/
+__pycache__/
+.csv
+.pyc

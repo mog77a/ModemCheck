@@ -1,0 +1,848 @@
+<!DOCTYPE HTML>\r\n<html>\r\n
+
+<head>\r\n
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">\r\n
+    <meta name="description" content=\'CM1000v2\'>\r\n
+    <META http-equiv="Content-Style-Type" content="text/css">\r\n
+    <META http-equiv="Pragma" content="no-cache">\r\n
+    <META HTTP-equiv="Cache-Control" content="no-cache">\r\n
+    <META HTTP-EQUIV="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT">\r\n <title>NETGEAR Modem CM1000v2</title>
+    \r\n\r\n
+    <link rel="stylesheet" href="css/table.css">\r\n
+    <link rel="stylesheet" href="css/button.css">\r\n <style>
+        \r\n html,
+        body {
+            \r\n margin: 0;
+            \r\n padding: 0;
+            \r\n font-family: Arial;
+            \r\n
+        }
+
+        \r\n\r\n h2 {
+            \r\n padding-left: 0%;
+            \r\n font-size: 20px;
+            \r\n font-family: Arial;
+            \r\n font-weight: bold;
+            \r\n color: #9d98ff;
+            \r\n
+        }
+
+        \r\n\r\n .topframe {
+            \r\n background-color: #ffffff;
+            \r\n color: #000000;
+            \r\n font-size: 12px;
+            \r\n font-family: Arial;
+            \r\n margin: 0;
+            \r\n padding: 0;
+            \r\n
+        }
+
+        \r\n\r\n button {
+            \r\n position: relative;
+            \r\n border: 0;
+            \r\n padding: 0;
+            \r\n cursor: pointer;
+            \r\n overflow: visible;
+            \r\n
+        }
+
+        \r\n\r\n button::-moz-focus-inner {
+            \r\n border: none;
+            \r\n
+        }
+
+        \r\n\r\n .centerTd {
+            \r\n font-family: Arial;
+            \r\n font-size: 14px;
+            \r\n height: 15px;
+            \r\n color: #404040;
+            \r\n width: 600px;
+            \r\n padding-left: 20px;
+            \r\n
+        }
+
+        \r\n\r\n .textRow {
+            \r\n font-family: Arial;
+            \r\n font-size: 14px;
+            \r\n height: 15px;
+            \r\n color: #404040;
+            \r\n
+        }
+
+        \r\n
+    </style>\r\n\r\n
+    <script
+        type="text/javascript">\r\n        function checkData() {
+            \r\n            var cf = document.forms[0]; \r\n            var msg = ""; \r\n\r\n            if (cf.loginUsername.value == "") \r\n            {
+            \r\n
+                alert("Invalid Username. Username must not be blank."); \r\n                return false; \r\n
+            } \r\n\r\n            if (cf.loginPassword.value == "") \r\n            { \r\n                alert("Invalid Password. Password must not be blank."); \r\n                return false; \r\n } \r\n\r\n            return true; \r\n
+            } \r\n    </script>
+    \r\n
+</head>\r\n\r\n
+
+<body class="page-body" style="background-color:#ffffff">\r\n <table
+        style="height:92px; width:100%; margin:0; padding:0" CELLPADDING=0 CELLSPACING=0 class="topframe">\r\n <tr>\r\n
+            <td style="padding-left:20px">\r\n <img style="position:relative;left:-7px;"
+                    src="img/Netgeargenie2.png"><br>\r\n <span id="ModuleName"><b><SPAN
+                            id=\'ModuleName\'><B>CM1000v2</B></SPAN></b></span>\r\n </td>\r\n </tr>\r\n <tr>\r\n <td>
+                &nbsp;</td>\r\n </tr>\r\n </table>\r\n <div style="position: relative">\r\n <form id="target"
+            name="login" method="POST" action="/goform/GenieLogin">\r\n <img src="img/subhead2-top.gif"
+                style="width:100%; height: 32px;">\r\n <label class="subhead2">\r\n Log In\r\n </label>\r\n <table
+                style="height:150px; margin-top: 150px" align="center">\r\n <tr>\r\n <td nowrap width="50%"
+                        align="left">Username</td>\r\n
+                    <td nowrap width="50%" align="left"><input type="text" name="loginUsername" size="18" maxlength="32"
+                            value=""></td>\r\n
+                </tr>\r\n <tr>\r\n
+                    <td nowrap width="50%" align="left">Password</td>\r\n <td nowrap width="50%" align="left"><input
+                            type="password" name="loginPassword" size="18" maxlength="32" value=""></td>\r\n
+                </tr>\r\n\r\n <tr align="center" valign="middle">\r\n <td style="padding-top:10px;padding-bottom:10px"
+                        align="center" colspan="2" class="table-seperate-border">\r\n <button id="apply" value="1"
+                            onClick="return checkData()" type="SUBMIT" name="login" class="button-apply"> <span
+                                class="roundleft_apply">Login&nbsp;<span
+                                    class="apply-icon">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+                                class="roundright_apply">&nbsp;&nbsp;&nbsp;</span></button>\r\n </td>\r\n
+                </tr>\r\n </table>\r\n <input type="hidden" name="webToken" value=1661810895 />\r\n </form>\r\n <div>
+            \r\n</body>\r\n
+
+</html>\r\n'
+Traceback (most recent call last):
+File "D:\ModemCheck\ModemCheck.py", line 337, in <module>
+    fetch_stats(password=modem_password, datafile_name=args.datafile)
+    File "D:\ModemCheck\ModemCheck.py", line 131, in fetch_stats
+    raise ValueError('Web page contained bogus status data.')
+    ValueError: Web page contained bogus status data.
+    pwsh> python .\ModemCheck.py -p .\pass.txt woodengate_0
+    ERROR:__main__:Web page contained bogus data: b'
+    <!DOCTYPE HTML>\r\n<html>\r\n
+
+    <head>\r\n
+        <META name="description" content=\'CM1000v2\'>\r\n
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">\r\n
+        <META http-equiv="Content-Style-Type" content="text/css">\r\n
+        <META http-equiv="Pragma" content="no-cache">\r\n
+        <META HTTP-equiv="Cache-Control" content="no-cache">\r\n
+        <META HTTP-EQUIV="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT">\r\n <title>NETGEAR Modem CM1000v2</title>
+        \r\n
+        <link rel="stylesheet" href="css/table.css">\r\n
+        <link rel="stylesheet" href="css/scrollbar.css">\r\n
+        <link rel="stylesheet" href="css/button.css">\r\n
+        <script src="script/jquery.js"></script>\r\n
+        <script src="script/jquery.mousewheel.js"></script>\r\n
+        <script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>\r\n
+        <script src="script/script.js"></script>\r\n
+        <link rel="stylesheet" href="css/form.css">\r\n <STYLE TYPE="text/javascript">
+            \r\n classes.num.all.fontFamily="Courier";
+            \r\n classes.num.all.fontSize="10pt";
+            \r\n
+        </style>\r\n
+        <script language="javascript" type="text/javascript" src="script/func.js"></script>\r\n
+        <script language="javascript" type="text/javascript" src="script/msg.js"></script>\r\n
+        <script language="javascript" type="text/javascript" src="script/utility.js"></script>\r\n
+        <script language="javascript" type="text/javascript" src="script/browser.js"></script>\r\n
+        <script language="javascript" type="text/javascript" src="script/md5.js"></script>\r\n
+        <script language="javascript" type="text/javascript" src="script/wep.js"></script>\r\n
+        <script language="javascript" type="text/javascript">\r\n            var isInited = 0; \r\n\r\n            $(document).ready(function () \r\n            {
+            \r\n                // $(\'.scroll-pane\').jScrollPane(\'scrollbarMargin:5px\');\r\n                $("#target").submit(function()\r\n                {\r\n                    buttonFilter();\r\n                });\r\n            });\r\n\r\n            function setHelpIframeVisible()\r\n            {\r\n                $(\'.help-frame-div\').css("visibility","visible");\r\n            }\r\n\r\n            function showHelpIframe()\r\n            {\r\n                var imgSrc=document.getElementById(\'help-button\');\r\n\r\n                if (imgSrc.src.search("up")>=0)\r\n                {\r\n                    $(".help-frame-div").show();\r\n                    window.frames["helpframe"].$(\'#content\').jScrollPane({showArrows:true});\r\n                    imgSrc.src="img/helparrowdown-icon.gif";\r\n                }\r\n                else\r\n                {\r\n                    $(".help-frame-div").hide();\r\n                    imgSrc.src="img/helparrowup-icon.gif";\r\n                 
+     setTimeout(setHelpIframeVisible,500); \r\n
+            }\r\n                if ((navigator.appName.indexOf("Internet Explorer") == -1) ||\r\n(navigator.appVersion.indexOf("MSIE 9") == -1)) \r\n                    change_size(); \r\n            }\r\n\r\n            function moveToHTMLend() \r\n            {
+            \r\n                window.location.href =\'#helpframe-anchor\';\r\n                setHelpIframeVisible();\r\n            }\r\n\r\n            function loadhelp(fname,anchname)\r\n            {\r\n                var pane = window.frames["helpframe"].$(\'#content\');\r\n                var imgSrc=document.getElementById(\'help-button\');\r\n                if (imgSrc.src.search("up")<0)\r\n                {\r\n                    $(".help-frame-div").show();\r\n                    pane.jScrollPane({showArrows:true});\r\n\r\n                    if ((loadhelp.arguments.length == 1 ) || (anchname == "" ))\r\n            
+                { \r\n                        window.frames["helpframe"].location.href = fname + "_h.htm"; \r\n                        $(".help-frame-div").show(); \r\n } \r\n            
+          else \r\n                    { \r\n                        window.frames["helpframe"].location.href = fname + "_h.htm#" + anchname; \r\n                        $(".help-frame-div").show(); \r\n } \r\n\r\n                    $(".help-frame-div").show(); \r\n
+                pane.jScrollPane({ showArrows: true }); \r\n
+            } \r\n            }\r\n\r\n            /*\r\n            function loadhelp(fname,anchname)\r\n            {\r\n               
+   top.helpframe.location.href=fname+"_"+anchname+".html";\r\n            }\r\n            */\r\n\r\n            function InitTagValue() \r\n            {
+            \r\n                /*\r\n             
+       Acquire Downstream Channel (text) | Acquire Downstream Channel Comment (text) |\r\n                  Connectivity State (text) | Connectivity State Comment (text) |\r\n                 
+   Boot State (text) | Boot State Comment (text) |\r\n                  Configuration File (text) | Configuration File Comment (text) |\r\n                  Security (text) | Security Comment (text) |\r\n                  Current System Time (text)\r\n                */\r\n
+                //var tagValueList = "0|In Progress|In Progress|Not Synchronized|In Progress|Unknown|In Progress|Unknown|Disabled|Disabled|--- --- -- --:--:-- ----";\r\n                //var tagValueList = "399|Done|Done|Synchronized|Done|Unknown|In Progress|Unknown|Disabled|Disabled|123 456 78 90:12:34 5678";\r\n                var tagValueList = \'453000000|Locked|OK|Operational|OK|Operational|OK|CM.cfg|Disabled|Disabled|Mon Jun 11 15:30:50 2012|0|\';\r\n\r\n                return tagValueList.split("|");\r\n            }\r\n\r\n            function InitUpdateView(tagValues)\r\n            {\r\n                document.getElementById("AcquireDsChanelStatus").innerHTML = tagValues[0] + " Hz";\r\n                document.getElementById("AcquireDsChanelComment").innerHTML = tagValues[1];\r\n                document.getElementById("ConnectivityStateStatus").innerHTML = tagValues[2];\r\n                document.getElementById("ConnectivityStateComment").innerHTML = tagValues[3];\r\n                document.getElementById("BootStateStatus").innerHTML = tagValues[4];\r\n                document.getElementById("BootStateComment").innerHTML = tagValues[5];\r\n                document.getElementById("ConfigurationFileStatus").innerHTML = tagValues[6];\r\n                document.getElementById("ConfigurationFileComment").innerHTML = tagValues[7];\r\n                document.getElementById("SecurityStatus").innerHTML = tagValues[8];\r\n                document.getElementById("SecurityComment").innerHTML = tagValues[9];\r\n                document.getElementById("Current_systemtime").innerHTML = \'<font face="Helvetica" size="2"><b>Current System Time: </b>\' + tagValues[10] + \'</font>\';\r\n           
+                $("#Startupfreq").val(tagValues[11]);   //20120525 jeffery implement goto freq\r\n            }\r\n\r\n            function InitUsTableTagValue()\r\n            {\r\n                /*\r\n                  Channel (text) | Lock Status (text) | US Channel Type (text) | Channel ID (text) | Symbol Rate (text) | Frequency (text) | Power (text)\r\n                */\r\n                /*\r\n                    var tagValueList = "4" +\r\n                        "|1|Not Locked|Unknown|0|0|0|0.0" +\r\n                        "|2|Not Locked|Unknown|0|0|0|0.0" +\r\n                        "|3|Not Locked|Unknown|0|0|0|0.0" +\r\n                        "|4|Not Locked|Unknown|0|0|0|0.0";\r\n                */\r\n                var tagValueList = \'4|1|Locked|TDMA|1|2560|33000000 Hz|34.8|2|Not Locked|Unknown|0|0|0 Hz|0.0|3|Not Locked|Unknown|0|0|0 Hz|0.0|4|Not Locked|Unknown|0|0|0 Hz|0.0\';\r\n\r\n                return tagValueList.split("|");\r\n            }\r\n\r\n            function onAddUsRowCB(newRow, rowId, firstCellIdx, tags)\r\n            {\r\n                var cellsArray = new Array();\r\n\r\n                cellsArray [0] = tags[firstCellIdx + 0];\r\n                cellsArray [1] = tags[firstCellIdx + 1];\r\n                cellsArray [2] = tags[firstCellIdx + 2];\r\n                cellsArray [3] = tags[firstCellIdx + 3];\r\n                cellsArray [4] = tags[firstCellIdx + 4] + " Ksym/sec";\r\n                cellsArray [5] = tags[firstCellIdx + 5];\r\n                cellsArray [6] = tags[firstCellIdx + 6] + " dBmV";\r\n\r\n                return cellsArray;\r\n           
+            } \r\n\r\n            function InitDsTableTagValue() \r\n            {
+            \r\n                /*\r\n                  Channel (text) | Lock Status (text) | Modulation (text) | Channel ID (text) | Frequency (text) | Power (text) | SNR (text)\r\n                */\r\n                /*\r\n                    var tagValueList = "8" +\r\n                        "|1|Locked|Unknown|0|809500000|-61.6|0.0" +\r\n                        "|2|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|3|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|4|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|5|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|6|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|7|Not Locked|Unknown|0|0|0.0|0.0" +\r\n                        "|8|Not Locked|Unknown|0|0|0.0|0.0";\r\n                */\r\n                var tagValueList = \'8|1|Locked|QAM64|143|453000000 Hz|-2.5|48.5|2|Not Locked|Unknown|0|0 Hz|0.0|0.0|3|Not Locked|Unknown|0|0 Hz|0.0|0.0|4|Not Locked|Unknown|0|0 Hz|0.0|0.0|5|Not Locked|Unknown|0|0 Hz|0.0|0.0|6|Not Locked|Unknown|0|0 Hz|0.0|0.0|7|Not Locked|Unknown|0|0 Hz|0.0|0.0|8|Not Locked|Unknown|0|0 Hz|0.0|0.0\';\r\n\r\n              
+                return tagValueList.split("|"); \r\n
+            } \r\n\r\n            function onAddDsRowCB(newRow, rowId, firstCellIdx, tags) \r\n            { \r\n                var cellsArray = new Array(); \r\n\r\n                cellsArray[0] = tags[firstCellIdx + 0]; \r\n                cellsArray[1] = tags[firstCellIdx + 1]; \r\n                cellsArray[2] = tags[firstCellIdx + 2]; \r\n                cellsArray[3] = tags[firstCellIdx + 3]; \r\n                cellsArray[4] = tags[firstCellIdx + 4]; \r\n                cellsArray[5] = tags[firstCellIdx + 5] + " dBmV"; \r\n                cellsArray[6] = tags[firstCellIdx + 6] + " dB"; \r\n\r\n                return cellsArray; \r\n } \r\n\r\n            function InitUsTableUpdateView(tagValues) \r\n            {
+            \r\n                /* draw table and insert content value */\r\n                drawTable(\'usTable\', tagValues, onAddUsRowCB);\r\n            }\r\n\r\n            function InitDsTableUpdateView(tagValues)\r\n            {\r\n                /* draw table and insert content value */\r\n                drawTable(\'dsTable\', tagValues, onAddDsRowCB);\r\n            
+  } \r\n\r\n            function BodyInit() \r\n            {
+            \r\n                InitUpdateView(InitTagValue()); \r\n                InitUsTableUpdateView(InitUsTableTagValue()); \r\n
+                InitDsTableUpdateView(InitDsTableTagValue()); \r\n
+            } \r\n\r\n            // Implement goto freq\r\n            function checkData()\r\n            {\r\n                var cf = document.forms[0];\r\n                var txt,i,c;\r\n\r\n                if (cf.Startupfreq.value == "")\r\n                {\r\n                    alert("This value cannot be blank.");\r\n                    return false;\r\n                }\r\n                txt = cf.Startupfreq.value;\r\n                for (i=0;i<txt.length;i++)\r\n                {\r\n                  
+            c = txt.charAt(i); \r\n                    if ("0123456789".indexOf(c, 0) < 0) \r\n
+            { \r\n                        alert("This value is invalid!"); \r\n                        return false; \r\n } \r\n                }\r\n                if (parseInt(cf.Startupfreq.value, 10) < 88000000 || parseInt(cf.Startupfreq.value, 10) > 859000000) \r\n
+            { \r\n                    alert("This value is invalid! Should be 88000000-859000000."); \r\n                    return false; \r\n } \r\n                else \r\n
+            { \r\n                    return true; \r\n } \r\n            }\r\n        </script>\r\n <style
+            type="text/css">
+            \r\n .style1 {
+                \r\n text-align: left;
+                \r\n
+            }
+
+            \r\n
+        </style>\r\n
+    </head>\r\n
+    <!-- Remove loadhelp -->\r\n
+    <!--\r\n    <body onload=\'BodyInit();loadhelp("help","Connect");\' style="margin:0px;background-color:#e5e5e5">\r\n    -->\r\n
+
+    <body class="page-body" onLoad="change_size();" onResize="change_size();">\r\n <img class="body-image"
+            src="img/subhead2-background.jpg">\r\n <img class="cover-image" src="img/cover-image.gif">\r\n <div
+            id="full-page-container">\r\n <img class="subtop-image" src="img/subhead2-top.gif">\r\n <div
+                class="subhead2">Cable Connection</div>\r\n <table border="0" style="height:370px"
+                class="subhead2-table">\r\n <tr>\r\n <td class="scrollpane-table-seperate-border" colspan="2">\r\n <div
+                            class="scroll-pane" style="height:410px;width:620px;overflow:auto;scrolling:auto">\r\n
+                            <table style="border-collapse:collapse;width:97%">\r\n <tr>\r\n
+                                    <td colspan="2">\r\n </td>\r\n
+                                </tr>\r\n <tr>\r\n
+                                    <td colspan="2" height="12">\r\n <div
+                                            style="background-image:url(\'img/liteblue.gif\');width:100%">&nbsp;</div>
+                                        \r\n
+                                    </td>\r\n
+                                </tr>\r\n
+                                <!-- Implement goto freq -->\r\n <form id="target" name="gotodsfreq" method="POST"
+                                    action="/goform/DocsisStatus">\r\n <tr>\r\n <td>\r\n <center>\r\n <button id="apply"
+                                                    value="Apply" type="SUBMIT"
+                                                    onClick="buttonClick(this,\'Apply\'); return checkData();"
+                                                    name="Apply" class="button-apply"> <span
+                                                        class="roundleft_apply">Apply&nbsp;<span
+                                                            class="apply-icon">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+                                                        class="roundright_apply">&nbsp;&nbsp;&nbsp;</span></button>\r\n
+                                                <button id="cancel" value="Cancel"
+                                                    onClick="buttonClick(this,\'Cancel\');window.location.reload(true);"
+                                                    type="BUTTON" name="Cancel" class="button-rule"><span
+                                                        class="roundleft_button"><span
+                                                            class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;Cancel</span></span><span
+                                                        class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>\r\n
+                                            </center>\r\n </td>\r\n </tr>\r\n <tr>\r\n <td><b> Frequency start Value
+                                            </b></td>\r\n
+                                    </tr>\r\n <tr>\r\n
+                                        <td>This field below allows you to modify the frequency the cable modem start
+                                            with its scan during initialization and registration. Enter the new start
+                                            frequency and restart the cable modem for it to take effect. </td>\r\n
+                                    </tr>\r\n <input type="hidden" name="buttonHit"><input type="hidden"
+                                        name="buttonValue">\r\n <tr>\r\n <td>\r\n <table border="1" cellpadding="2"
+                                                cellspacing="0" class="TableStyle">\r\n
+                                                <tr>\r\n <td><b>Starting Frequency</b></td>\r\n <td><input
+                                                            id="start_freq" type="text" name="Startupfreq" size="10"
+                                                            maxlength="9" id="Startupfreq" value="519000000"></td>\r\n
+                                                </tr>\r\n
+                                            </table>\r\n </td>\r\n
+                                    </tr>\r\n <tr>\r\n
+                                        <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n
+                                    </tr>\r\n <tr>\r\n <td colspan="2"><b>
+                                                <tabindex=-1>Startup Procedure</tabindex=-1>
+                                            </b></td>\r\n
+                                    </tr>\r\n <tr>\r\n
+                                        <td>\r\n <table id="startup_procedure_table" name="Startup_Procedure" border="1"
+                                                cellpadding="2" cellspacing="0" class="TableStyle">\r\n <tr>\r\n
+                                                    <td><span class="thead"><b>Procedure</b></span></td>\r\n
+                                                    <td><span class="thead"><b>Status</b></span></td>\r\n
+                                                    <td><span class="thead"><b>Comment</b></span></td>\r\n
+                                                </tr>\r\n
+                                                <tr>\r\n <td class="style1">Acquire Downstream Channel</td>\r\n <td>
+                                                        519000000 Hz</td>\r\n <td>Locked</td>\r\n
+                                                </tr>\r\n <tr>\r\n <td class="style1">Connectivity State</td>\r\n <td>OK
+                                                    </td>\r\n
+                                                    <td>Operational</td>\r\n
+                                                </tr>\r\n <tr>\r\n
+                                                    <td class="style1">Boot State</td>\r\n
+                                                    <td>OK</td>\r\n <td>Operational</td>\r\n
+                                                </tr>\r\n
+                                                <tr style="display:none">
+                                                    <!-- Hidden config file field -->\r\n <td class="style1">
+                                                        Configuration File</td>\r\n <td>OK</td>\r\n
+                                                    <td>d11_m_cm1000v2_fast_c01.cm</td>\r\n
+                                                </tr>\r\n <tr>\r\n
+                                                    <td class="style1">Security</td>\r\n
+                                                    <td>Enable</td>\r\n
+                                                    <td>BPI+</td>\r\n
+                                                </tr>\r\n
+                                                <tr>\r\n <td class="style1">IP Provisioning Mode</td>\r\n
+                                                    <td>Honor MDD</td>\r\n <td>IPv6 only</td>\r\n
+                                                </tr>\r\n
+                                            </table>\r\n </td>\r\n
+                                    </tr>\r\n <tr>\r\n
+                                        <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n
+                                    </tr>\r\n <tr>
+                                        <td><b>
+                                                <tabindex=-1>Downstream Bonded Channels</tabindex=-1>
+                                            </b></td>
+                                    </tr>\n <tr>
+                                        <td>\n <div class="in-frame-table">\n <table border="1" cellpadding="2"
+                                                    cellspacing="0" id="dsTable" class="TableStyle">\n <tr>\n
+                                                        <td><span class="thead">Channel</span></td>\n <td><span
+                                                                class="thead">Lock Status</span></td>\n <td><span
+                                                                class="thead">Modulation</span></td>\n <td><span
+                                                                class="thead">Channel ID</span></td>\n <td><span
+                                                                class="thead">Frequency</span></td>\n <td><span
+                                                                class="thead">Power</span></td>\n <td><span
+                                                                class="thead">SNR / MER</span></td>\n <td><span
+                                                                class="thead">Unerrored Codewords</span></td>\n <td>
+                                                            <span class="thead">Correctable Codewords</span></td>\n <td>
+                                                            <span class="thead">Uncorrectable Codewords</span></td>\n
+                                                    </tr>\n <tr>
+                                                        <td>1</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>20</td>
+                                                        <td>519000000 Hz</td>
+                                                        <td>-1.5 dBmV</td>
+                                                        <td>40.3 dB</td>
+                                                        <td>328306160</td>
+                                                        <td>664</td>
+                                                        <td>1769</td>
+                                                    </tr>\n <tr>
+                                                        <td>2</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>17</td>
+                                                        <td>495000000 Hz</td>
+                                                        <td>-1.5 dBmV</td>
+                                                        <td>40.2 dB</td>
+                                                        <td>324901248</td>
+                                                        <td>949</td>
+                                                        <td>1913</td>
+                                                    </tr>\n <tr>
+                                                        <td>3</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>18</td>
+                                                        <td>507000000 Hz</td>
+                                                        <td>-1.4 dBmV</td>
+                                                        <td>40.4 dB</td>
+                                                        <td>324893451</td>
+                                                        <td>966</td>
+                                                        <td>1857</td>
+                                                    </tr>\n <tr>
+                                                        <td>4</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>19</td>
+                                                        <td>513000000 Hz</td>
+                                                        <td>-1.6 dBmV</td>
+                                                        <td>40.3 dB</td>
+                                                        <td>324906419</td>
+                                                        <td>836</td>
+                                                        <td>1784</td>
+                                                    </tr>\n <tr>
+                                                        <td>5</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>21</td>
+                                                        <td>525000000 Hz</td>
+                                                        <td>-1.8 dBmV</td>
+                                                        <td>40.2 dB</td>
+                                                        <td>324960461</td>
+                                                        <td>766</td>
+                                                        <td>1784</td>
+                                                    </tr>\n <tr>
+                                                        <td>6</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>22</td>
+                                                        <td>531000000 Hz</td>
+                                                        <td>-2.1 dBmV</td>
+                                                        <td>40.1 dB</td>
+                                                        <td>324981432</td>
+                                                        <td>840</td>
+                                                        <td>1811</td>
+                                                    </tr>\n <tr>
+                                                        <td>7</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>23</td>
+                                                        <td>537000000 Hz</td>
+                                                        <td>-2.2 dBmV</td>
+                                                        <td>40.1 dB</td>
+                                                        <td>325003731</td>
+                                                        <td>791</td>
+                                                        <td>1827</td>
+                                                    </tr>\n <tr>
+                                                        <td>8</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>24</td>
+                                                        <td>543000000 Hz</td>
+                                                        <td>-2.0 dBmV</td>
+                                                        <td>40.2 dB</td>
+                                                        <td>325026295</td>
+                                                        <td>853</td>
+                                                        <td>1754</td>
+                                                    </tr>\n <tr>
+                                                        <td>9</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>25</td>
+                                                        <td>549000000 Hz</td>
+                                                        <td>-2.2 dBmV</td>
+                                                        <td>40.1 dB</td>
+                                                        <td>325044849</td>
+                                                        <td>719</td>
+                                                        <td>1890</td>
+                                                    </tr>\n <tr>
+                                                        <td>10</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>26</td>
+                                                        <td>555000000 Hz</td>
+                                                        <td>-2.3 dBmV</td>
+                                                        <td>36.3 dB</td>
+                                                        <td>325068570</td>
+                                                        <td>768</td>
+                                                        <td>1752</td>
+                                                    </tr>\n <tr>
+                                                        <td>11</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>27</td>
+                                                        <td>561000000 Hz</td>
+                                                        <td>-2.3 dBmV</td>
+                                                        <td>39.3 dB</td>
+                                                        <td>325093260</td>
+                                                        <td>827</td>
+                                                        <td>1723</td>
+                                                    </tr>\n <tr>
+                                                        <td>12</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>28</td>
+                                                        <td>567000000 Hz</td>
+                                                        <td>-2.2 dBmV</td>
+                                                        <td>38.7 dB</td>
+                                                        <td>325115027</td>
+                                                        <td>732</td>
+                                                        <td>1756</td>
+                                                    </tr>\n <tr>
+                                                        <td>13</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>29</td>
+                                                        <td>573000000 Hz</td>
+                                                        <td>-2.1 dBmV</td>
+                                                        <td>38.5 dB</td>
+                                                        <td>325136429</td>
+                                                        <td>746</td>
+                                                        <td>1716</td>
+                                                    </tr>\n <tr>
+                                                        <td>14</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>30</td>
+                                                        <td>579000000 Hz</td>
+                                                        <td>-2.5 dBmV</td>
+                                                        <td>39.7 dB</td>
+                                                        <td>325157416</td>
+                                                        <td>752</td>
+                                                        <td>1833</td>
+                                                    </tr>\n <tr>
+                                                        <td>15</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>31</td>
+                                                        <td>585000000 Hz</td>
+                                                        <td>-2.4 dBmV</td>
+                                                        <td>40.0 dB</td>
+                                                        <td>325169507</td>
+                                                        <td>748</td>
+                                                        <td>1751</td>
+                                                    </tr>\n <tr>
+                                                        <td>16</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>32</td>
+                                                        <td>591000000 Hz</td>
+                                                        <td>-2.6 dBmV</td>
+                                                        <td>38.2 dB</td>
+                                                        <td>325203978</td>
+                                                        <td>664</td>
+                                                        <td>1767</td>
+                                                    </tr>\n <tr>
+                                                        <td>17</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>33</td>
+                                                        <td>597000000 Hz</td>
+                                                        <td>-2.7 dBmV</td>
+                                                        <td>36.9 dB</td>
+                                                        <td>325223225</td>
+                                                        <td>679</td>
+                                                        <td>1831</td>
+                                                    </tr>\n <tr>
+                                                        <td>18</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>34</td>
+                                                        <td>603000000 Hz</td>
+                                                        <td>-3.1 dBmV</td>
+                                                        <td>38.8 dB</td>
+                                                        <td>325247924</td>
+                                                        <td>649</td>
+                                                        <td>1771</td>
+                                                    </tr>\n <tr>
+                                                        <td>19</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>35</td>
+                                                        <td>609000000 Hz</td>
+                                                        <td>-3.2 dBmV</td>
+                                                        <td>39.6 dB</td>
+                                                        <td>325273621</td>
+                                                        <td>719</td>
+                                                        <td>1688</td>
+                                                    </tr>\n <tr>
+                                                        <td>20</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>36</td>
+                                                        <td>615000000 Hz</td>
+                                                        <td>-3.3 dBmV</td>
+                                                        <td>39.7 dB</td>
+                                                        <td>325292768</td>
+                                                        <td>686</td>
+                                                        <td>1714</td>
+                                                    </tr>\n <tr>
+                                                        <td>21</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>37</td>
+                                                        <td>621000000 Hz</td>
+                                                        <td>-3.3 dBmV</td>
+                                                        <td>39.7 dB</td>
+                                                        <td>325316422</td>
+                                                        <td>627</td>
+                                                        <td>1769</td>
+                                                    </tr>\n <tr>
+                                                        <td>22</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>38</td>
+                                                        <td>627000000 Hz</td>
+                                                        <td>-3.8 dBmV</td>
+                                                        <td>39.1 dB</td>
+                                                        <td>325339797</td>
+                                                        <td>574</td>
+                                                        <td>1820</td>
+                                                    </tr>\n <tr>
+                                                        <td>23</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>39</td>
+                                                        <td>633000000 Hz</td>
+                                                        <td>-3.8 dBmV</td>
+                                                        <td>39.5 dB</td>
+                                                        <td>325358987</td>
+                                                        <td>563</td>
+                                                        <td>1792</td>
+                                                    </tr>\n <tr>
+                                                        <td>24</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>40</td>
+                                                        <td>639000000 Hz</td>
+                                                        <td>-4.0 dBmV</td>
+                                                        <td>39.3 dB</td>
+                                                        <td>325380311</td>
+                                                        <td>555</td>
+                                                        <td>1800</td>
+                                                    </tr>\n <tr>
+                                                        <td>25</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>41</td>
+                                                        <td>645000000 Hz</td>
+                                                        <td>-3.9 dBmV</td>
+                                                        <td>39.3 dB</td>
+                                                        <td>325403438</td>
+                                                        <td>667</td>
+                                                        <td>1729</td>
+                                                    </tr>\n <tr>
+                                                        <td>26</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>42</td>
+                                                        <td>651000000 Hz</td>
+                                                        <td>-4.2 dBmV</td>
+                                                        <td>39.1 dB</td>
+                                                        <td>325426783</td>
+                                                        <td>579</td>
+                                                        <td>1789</td>
+                                                    </tr>\n <tr>
+                                                        <td>27</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>43</td>
+                                                        <td>657000000 Hz</td>
+                                                        <td>-4.1 dBmV</td>
+                                                        <td>39.3 dB</td>
+                                                        <td>325450406</td>
+                                                        <td>585</td>
+                                                        <td>1780</td>
+                                                    </tr>\n <tr>
+                                                        <td>28</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>44</td>
+                                                        <td>663000000 Hz</td>
+                                                        <td>-4.4 dBmV</td>
+                                                        <td>39.0 dB</td>
+                                                        <td>325472687</td>
+                                                        <td>593</td>
+                                                        <td>1846</td>
+                                                    </tr>\n <tr>
+                                                        <td>29</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>45</td>
+                                                        <td>669000000 Hz</td>
+                                                        <td>-4.6 dBmV</td>
+                                                        <td>38.9 dB</td>
+                                                        <td>325495881</td>
+                                                        <td>599</td>
+                                                        <td>1932</td>
+                                                    </tr>\n <tr>
+                                                        <td>30</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>46</td>
+                                                        <td>675000000 Hz</td>
+                                                        <td>-4.9 dBmV</td>
+                                                        <td>37.7 dB</td>
+                                                        <td>325545415</td>
+                                                        <td>690</td>
+                                                        <td>1833</td>
+                                                    </tr>\n <tr>
+                                                        <td>31</td>
+                                                        <td>Locked</td>
+                                                        <td>QAM256</td>
+                                                        <td>47</td>
+                                                        <td>681000000 Hz</td>
+                                                        <td>-5.1 dBmV</td>
+                                                        <td>38.7 dB</td>
+                                                        <td>325530259</td>
+                                                        <td>579</td>
+                                                        <td>1914</td>
+                                                    </tr>\n <tr>
+                                                        <td>32</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 0.0 dBmV</td>
+                                                        <td> 0.0 dB</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>\n </table>\n</div>\r\n
+                                            <!--\r\n                                        <tr><td>1</td><td>Locked</td><td>unknown</td><td>0</td><td>809500000 Hz</td><td>-61.6 dBmV</td><td> 0.0 dB</td></tr>\r\n                                        <tr><td>2</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n           
+                               <tr><td>3</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                                        <tr><td>4</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                                        <tr><td>5</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                     
+                     <tr><td>6</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                                        <tr><td>7</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                                        <tr><td>8</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Hz</td><td> 0.0 dBmV</td><td> 0.0 dB</td></tr>\r\n                               
+           -->\r\n
+                                            <!--\r\n                                   
+       <table border>\r\n                                         <tr><td colspan="4"><b>Downstream Channel 0</b></td></tr>\r\n                                         <tr><td>Lock Status</td><td>In Progress</td><td>Modulation</td><td>Unknown</td></tr>\r\n                               
+            <tr><td>Channel ID</td><td>0</td><td>Symbol rate</td><td>0 sym/sec</td></tr>\r\n                                         <tr><td>Downstream Frequency</td><td>0 Hz</td><td>Downstream Power</td><td>0 dBmV</td></tr>\r\n                                         <tr><td>SNR</td><td>0 dBmV</td><td>&nbsp;</td><td>&nbsp;</td></tr>\r\n                                        </table>\r\n                                        -->\r\n
+                                        </td>
+                                    </tr>\r\n <tr>\r\n
+                                        <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n
+                                    </tr>\r\n
+                                    <tr>
+                                        <td><b>
+                                                <tabindex=-1>Upstream Bonded Channels</tabindex=-1>
+                                            </b></td>
+                                    </tr>\n <tr>
+                                        <td>\n <div class="in-frame-table">\n <table border="1" cellpadding="2"
+                                                    cellspacing="0" class="TableStyle" id="usTable">\n <tr>\n <td><span
+                                                                class="thead">Channel</span></td>\n <td><span
+                                                                class="thead">Lock Status</span></td>\n <td><span
+                                                                class="thead">Modulation</span></td>\n <td><span
+                                                                class="thead">Channel ID</span></td>\n <td><span
+                                                                class="thead">Frequency</span></td>\n
+                                                        <td><span class="thead">Power</span></td>\n
+                                                    </tr>\n <tr>
+                                                        <td>1</td>
+                                                        <td>Locked</td>
+                                                        <td>ATDMA</td>
+                                                        <td>5</td>
+                                                        <td>16400000 Hz</td>
+                                                        <td>44.5 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>2</td>
+                                                        <td>Locked</td>
+                                                        <td>ATDMA</td>
+                                                        <td>6</td>
+                                                        <td>22800000 Hz</td>
+                                                        <td>44.8 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>3</td>
+                                                        <td>Locked</td>
+                                                        <td>ATDMA</td>
+                                                        <td>7</td>
+                                                        <td>29200000 Hz</td>
+                                                        <td>47.3 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>4</td>
+                                                        <td>Locked</td>
+                                                        <td>ATDMA</td>
+                                                        <td>8</td>
+                                                        <td>35600000 Hz</td>
+                                                        <td>47.8 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>5</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 0.0 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>6</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 0.0 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>7</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 0.0 dBmV</td>
+                                                    </tr>\n <tr>
+                                                        <td>8</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 0.0 dBmV</td>
+                                                    </tr>\n </table>\n</div>\r\n
+                                            <!--\r\n             
+                             <tr><td>1</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Ksym/sec</td><td>0 Hz</td><td> 0.0 dBmV</td></tr>\r\n                                        <tr><td>2</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Ksym/sec</td><td>0 Hz</td><td> 0.0 dBmV</td></tr>\r\n                                        <tr><td>3</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Ksym/sec</td><td>0 Hz</td><td> 0.0 dBmV</td></tr>\r\n              
+                            <tr><td>4</td><td>Not Locked</td><td>Unknown</td><td>0</td><td>0 Ksym/sec</td><td>0 Hz</td><td> 0.0 dBmV</td></tr>\r\n                                        -->\r\n
+                                            <!--\r\n                                        <table border>\r\n                                         <tr><td colspan="4"><b>Upstream Channel</b></td></tr>\r\n                                         <tr><td>Lock Status</td><td>Not Locked</td><td>Modulation</td><td>QPSK</td></tr>\r\n                                         <tr><td>Channel ID</td><td>2152232456</td><td>Symbol rate</td><td>0 Ksym/sec</td></tr>\r\n                  
+                         <tr><td>Upstream Frequency</td><td>-2142734840 Hz</td><td>Upstream Power</td><td>0 dBmV</td></tr>\r\n                                        </table>\r\n              
+                            -->\r\n
+                                        </td>
+                                    </tr>\r\n
+                                    <tr>\r\n <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n </tr>\r\n
+                                    <tr>
+                                        <td><b>
+                                                <tabindex=-1>Downstream OFDM Channels</tabindex=-1>
+                                            </b></td>
+                                    </tr>\n <tr>
+                                        <td>\n <div class="in-frame-table">\n <table border="1" cellpadding="2"
+                                                    cellspacing="0" id="d31dsTable" class="TableStyle">\n <tr>\n <td>
+                                                            <span class="thead">Channel</span></td>\n <td><span
+                                                                class="thead">Lock Status</span></td>\n <td><span
+                                                                class="thead">Modulation / Profile ID</span></td>\n <td>
+                                                            <span class="thead">Channel ID</span></td>\n <td><span
+                                                                class="thead">Frequency</span></td>\n <td><span
+                                                                class="thead">Power</span></td>\n <td><span
+                                                                class="thead">SNR / MER</span></td>\n <td><span
+                                                                class="thead">Active Subcarrier Number Range</span></td>
+                                                        \n <td><span class="thead">Unerrored Codewords</span></td>\n
+                                                        <td><span class="thead">Correctable Codewords</span></td>\n <td>
+                                                            <span class="thead">Uncorrectable Codewords</span></td>\n
+                                                    </tr>\n<tr>
+                                                        <td>1</td>
+                                                        <td>Locked</td>
+                                                        <td>0, 1, 2, 3</td>
+                                                        <td>48</td>
+                                                        <td>722000000 Hz</td>
+                                                        <td>-5.2 dBmV</td>
+                                                        <td>27.3 dB</td>
+                                                        <td>1228 ~ 2867</td>
+                                                        <td>110376640</td>
+                                                        <td>109916005</td>
+                                                        <td>3310</td>
+                                                    </tr>\n<tr>
+                                                        <td>2</td>
+                                                        <td>Not Locked</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td> 1.6 dBmV</td>
+                                                        <td> 0.0 dB</td>
+                                                        <td>0 ~ 4095</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>\n</table>\n</div>\r\n </td>
+                                    </tr>\r\n <tr>\r\n <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n
+                                    </tr>\r\n <tr>
+                                        <td><b>
+                                                <tabindex=-1>Upstream OFDMA Channels</tabindex=-1>
+                                            </b></td>
+                                    </tr>\n <tr>
+                                        <td>\n <div class="in-frame-table">\n <table border="1" cellpadding="2"
+                                                    cellspacing="0" id="d31usTable" class="TableStyle">\n <tr>\n <td>
+                                                            <span class="thead">Channel</span></td>\n <td><span
+                                                                class="thead">Lock Status</span></td>\n <td><span
+                                                                class="thead">Modulation / Profile ID</span></td>\n <td>
+                                                            <span class="thead">Channel ID</span></td>\n <td><span
+                                                                class="thead">Frequency</span></td>\n <td><span
+                                                                class="thead">Power</span></td>\n </tr>\n<tr>
+                                                        <td>1</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td>0 dBmV</td>
+                                                    </tr>\n<tr>
+                                                        <td>2</td>
+                                                        <td>Not Locked</td>
+                                                        <td>Unknown</td>
+                                                        <td>0</td>
+                                                        <td>0 Hz</td>
+                                                        <td>0 dBmV</td>
+                                                    </tr>\n</table>\n</div>\r\n </td>
+                                    </tr>\r\n <tr>\r\n <td>\r\n
+                                            <hr size="2" color="#0099cc">\r\n
+                                        </td>\r\n </tr>\r\n
+                                    <tr>\r\n <td id="Current_systemtime" name="CurrentSystemTime">
+                                            <font face="Helvetica" size="2"><b>Current System Time:&nbsp;</b>Tue Aug 29
+                                                17:33:01 2022\n</font><br>
+                                        </td>\r\n </tr>\r\n
+                                    <tr>\r\n <td id="SystemUpTime" name="SystemUpTime">
+                                            <font face="Helvetica" size="2"><b>System Up Time:&nbsp;</b>2:24:46</font>
+                                            <br>
+                                        </td>\r\n </tr>\r\n
+                            </table>\r\n
+                        </div>\r\n </td>\r\n </tr>\r\n
+                <tr valign="middle" align="center">
+                    <td class="table-seperate-border" colspan="2" style="padding-left:0px">
+                        <div class="help-frame-div"> <iframe src="DocsisStatus_h.htm" class="help-iframe" scrolling="no"
+                                name="helpframe" frameborder="0" onload="showHelpIframe();"></iframe> </div>
+                    </td>
+                </tr>\r\n
+            </table>\r\n <img class="subfooter-image" src="img/subhead2-bottom.gif">\r\n <div class="subhead2-bottom">
+                \r\n <span style="float:left;padding-left:10px;padding-top:5px"><img src="img/help-icon.gif"
+                        onmouseover="changeCursorPointer();" onclick="showHelpIframe();"
+                        onmouseout="changeCursorDefault();"></span>\r\n
+                <span class="subhead2-text" style="float:left;padding-left:3px;" onclick="showHelpIframe();"
+                    onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> Help Center </span>\r\n
+                <span class="button-help-arrow">\r\n <img src="img/helparrowdown-icon.gif" id="help-button"
+                        onclick="showHelpIframe();" onmouseover="changeCursorPointer();"
+                        onmouseout="changeCursorDefault();"></span>\r\n <span class="subhead2-text"
+                    style="text-decoration:underline;float:right;padding-right:10px" onclick="showHelpIframe();"
+                    onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> Show/Hide Help Center
+                </span>\r\n
+            </div>\r\n <input type="hidden" name="RetailSessionId" value="">\r\n
+            <input type="hidden" name="webToken" value=928983039 />\r\n <a name="helpframe-anchor"></a>\r\n </form>\r\n
+        </div>\r\n </body>\r\n
+
+    <head>\r\n
+        <META name="description" content=\'CM1000v2\'>\r\n
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">\r\n
+        <META http-equiv="Content-Style-Type" content="text/css">\r\n
+        <META http-equiv="Pragma" content="no-cache">\r\n
+        <META HTTP-equiv="Cache-Control" content="no-cache">\r\n
+        <META HTTP-EQUIV="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT">\r\n
+    </head>\r\n
+
+    </html>\r\n
